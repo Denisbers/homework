@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <a href="index.html">Registration</a>
+            <a href="autorization.html">Autorization</a>
+            <a href="search.html">Search</a>
+        </div>
+        <div>
+            <form action="https://tests.fomenko.top/echo/index.php">
+                <!--Тип кузова-->
+                <div>
+                    <label for="type">Тип кузова</label>
+                    <select name="type" id="type">
+                        <option value="cars">Легковые</option>
+                        <option value="moto">Мото</option>
+                        <option value="trucks">Грузовики</option>
+                    </select>
+                </div>
+                <!--Марка-->
+                <div>
+                    <label for="mark">Марка</label>
+                    <select id="mark" name="mark">
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                    </select>
+                </div>
+                <!--Модель-->
+                <div>
+                    <label for="model">Модель</label>
+                    <select id="model" name="model">
+                        <option value="A4">A4</option>
+                        <option value="A6">A6</option>
+                        <option value="A8">A8</option>
+                        <option value="3-series">3-series</option>
+                        <option value="5-series">5-series</option>
+                        <option value="7-series">7-series</option>
+                        <option value="C-class">C-class</option>
+                        <option value="E-class">E-class</option>
+                        <option value="S-class">S-class</option>
+                    </select>
+                </div>
+                <!--Страна производитель-->
+                <div>
+                    <label for="country">Страна производитель</label>
+                    <select id="country" name="country">
+                        <option value="uk">Великобритания</option>
+                        <option value="china">Китай</option>
+                        <option value="germany">Германия</option>
+                    </select>
+                </div>
+                <!--Тип топлива-->
+                <div>
+                    <label for="fuel">Тип топлива</label>
+                    <select id="fuel" name="fuel">
+                        <option value="gasoline">Бензин</option>
+                        <option value="diesel">Дизель</option>
+                        <option value="electro">Электро</option>
+                    </select>
+                </div>
+                <!--КПП-->
+                <div>
+                    <label for="transmision">КПП</label>
+                    <select id="transmision" name="transmision">
+                        <option value="manual">Механическая</option>
+                        <option value="automatic">Автоматическая</option>
+                    </select>
+                </div>
+                <!--Год выпуска-->
+                <div>
+                    <label for="year">Год выпуска</label>
+                    <input id="year" name="fromyear" type="number" placeholder="От">
+                    <input name="beforeyear" type="number" placeholder="До">
+                </div>
+                <!--Цена-->
+                <div>
+                    <label for="price">Цена</label>
+                    <input name="fromprice" id="price" type="number" placeholder="От">
+                    <input name="beforeprice" type="number" placeholder="До">
+                </div>
+                <!--Состояние-->
+                <div>
+                    <p>Состояние</p>
+                    <div>
+                        <input name="noaccid" type="checkbox" id="noaccid"><label for="noaccid">Без ДТП</label>
+                    </div>
+                    <div>
+                        <input name="accid" type="checkbox" id="accid"><label for="accid">После ДТП</label>
+                    </div>
+                    <div>
+                        <input name="nclear" type="checkbox" id="nclear"><label for="nclear">Нерастаможенн</label>
+                    </div>
+                    <div>
+                        <input name="credi" type="checkbox" id="credi"><label for="credi">В кредите</label>
+                    </div>
+                </div>
+                <!--Комфорт-->
+                <div>
+                    <p>Комфорт</p>
+                    <div>
+                        <div>
+                            <input name="hseats" type="checkbox" id="hseats"><label for="hseats">Подогрев
+                                сидений</label>
+                        </div>
+                        <div>
+                            <input name="vseats" type="checkbox" id="vseats"><label for="vseats">Вентиляция
+                                сидений</label>
+                        </div>
+                        <div>
+                            <input name="ac" type="checkbox" id="ac"><label for="ac">Кондиционер</label>
+                        </div>
+                        <div>
+                            <input name="sunroof" type="checkbox" id="sunroof"><label for="sunroof">Панорамная
+                                крыша</label>
+                        </div>
+                        <div>
+                            <input name="airs" type="checkbox" id="airs"><label for="airs">Пневмоподвеска</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Цвет-->
+                <div>
+                    <label for="colour">Цвет</label>
+                    <select id="colour" name="colour">
+                        <option value="beige">Бежевый</option>
+                        <option value="black">Черный</option>
+                        <option value="navy">Синий</option>
+                        <option value="brown">Коричневый</option>
+                        <option value="green">Зеленый</option>
+                        <option value="orange">Оранжевый</option>
+                        <option value="violet">Фиолетовый</option>
+                        <option value="red">Красный</option>
+                        <option value="white">Белый</option>
+                        <option value="yellow">Желтый</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
